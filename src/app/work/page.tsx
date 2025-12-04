@@ -16,7 +16,6 @@ import { type CaseStudy, loadCaseStudies, type MDXEntry } from '@/lib/mdx'
 import logoXinux from '@/images/clients/xinux/logo-dark.svg'
 import logoRust from '@/images/clients/rust-uzbekistan/logo-dark.svg'
 import logoDevOps from '@/images/clients/devops-journey/logo-dark.svg'
-import logoHaskell from '@/images/clients/haskell-uzbekistan/logo-dark.svg'
 import logoScala from '@/images/clients/scala-uzbekistan/logo-dark.svg'
 import logoEcma from '@/images/clients/ecma-uzbekistan/logo-dark.svg'
 import logoUzbekNet from '@/images/clients/uzbek-net/logo-dark.svg'
@@ -102,7 +101,6 @@ function CaseStudies({
 const clients = [
   ['Xinux', logoXinux, "https://github.com/xinux-org"],
   ["Rust O'zbekistan", logoRust, "https://github.com/rust-lang-uz"],
-  ["Haskell O'zbekistan", logoHaskell, "https://github.com/haskelluz"],
   ['DevOps Journey', logoDevOps, "https://github.com/devops-journey-uz"],
   ['Scala Uzbekistan', logoScala, "https://github.com/scala-uz"],
   ['Ecma Uzbekistan', logoEcma, "https://github.com/ecma-uz"],
@@ -166,15 +164,6 @@ export default async function Work() {
       </PageIntro>
 
       <CaseStudies caseStudies={caseStudies} />
-
-      <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: "Haskell O'zbekiston", logo: logoHaskell }}
-      >
-        Dasturlash va fikrlash savodxonligi hozirgi damda noto'g'ri shakllanib
-        bormoqda. Buni bizlar hamjamiyat bilan birgalikda qayta kashf qilamiz va
-        to'g'irlashga intilamiz.
-      </Testimonial>
 
       <Clients />
 

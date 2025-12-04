@@ -15,7 +15,6 @@ import logoXinux from '@/images/clients/xinux/logo-light.svg'
 import logoXinuxDark from '@/images/clients/xinux/logo-dark.svg'
 import logoRust from '@/images/clients/rust-uzbekistan/logo-light.svg'
 import logoDevOps from '@/images/clients/devops-journey/logo-light.svg'
-import logoHaskell from '@/images/clients/haskell-uzbekistan/logo-light.svg'
 import logoScala from '@/images/clients/scala-uzbekistan/logo-light.svg'
 import logoEcma from '@/images/clients/ecma-uzbekistan/logo-light.svg'
 import logoUzbekNet from '@/images/clients/uzbek-net/logo-light.svg'
@@ -27,7 +26,6 @@ import imageLaptop from '@/images/laptop.jpg'
 const clients = [
   ['Xinux', logoXinux, "https://github.com/xinux-org"],
   ["Rust O'zbekiston", logoRust, "https://github.com/rust-lang-uz"],
-  ["Haskell O'zbekiston", logoHaskell, "https://github.com/haskelluz"],
   ['Devops Journey', logoDevOps, "https://github.com/devops-journey-uz"],
   ['Scala Uzbekistan', logoScala, "https://github.com/scala-uz"],
   ['Ecma Uzbekistan', logoEcma, "https://github.com/ecma-uz"],

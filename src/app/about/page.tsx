@@ -16,7 +16,6 @@ import imageOrzklv from '@/images/team/orzklv.jpg'
 import imageAkhmadKadirov from '@/images/team/akhmad-kadirov.jpg'
 import imageBahromRahmatov from '@/images/team/bahrom-rahmatov.jpg'
 import imageManuchehrUsmonov from '@/images/team/manuchehr-usmonov.jpg'
-import imageKeiLissimus from '@/images/team/kei-lissimus.jpg'
 import imageNodirbekNomonov from '@/images/team/nodirbek-nomonov.jpg'
 import imageOtabekIsmoilov from '@/images/team/otabek-ismoilov.jpg'
 import imageShakhzodKudratov from '@/images/team/shakhzod-kudratov.jpg'
@@ -73,12 +72,6 @@ const team = [
         role: 'Asoschi / Yetakchi',
         link: 'https://orzklv.uz',
         image: { src: imageOrzklv },
-      },
-      {
-        name: 'Kei Lissimus',
-        role: '`Funksional Dasturlash` rais / Yetakchi',
-        link: 'https://github.com/thelissimus',
-        image: { src: imageKeiLissimus },
       },
       {
         name: 'Ahmad Qodirov',
