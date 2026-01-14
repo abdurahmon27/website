@@ -26,7 +26,7 @@
           { pkgs, ... }:
           {
             formatter = pkgs.nixfmt-tree;
-            devShells.default = import ./shell.nix pkgs { inherit pkgs; };
+            devShells.default = import ./shell.nix self { inherit pkgs; };
             packages.default = pkgs.callPackage ./default.nix { inherit pkgs; };
           };
       }
