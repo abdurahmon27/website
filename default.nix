@@ -26,7 +26,7 @@ pkgs.buildNpmPackage {
   version = manifest.version;
 
   src = ./.;
-  npmDepsHash = "sha256-2yUwDpQgUb2NYH1QSDrEBwqvTBWtD9zKpMzTmw+lYrY=";
+  npmDepsHash = "sha256-oE+ptTfvQInlwp0LLDwU32Ot5qQA7trFNNUs5QBJNsk=";
 
   installPhase = ''
     # Create output directory
