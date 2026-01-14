@@ -19,17 +19,16 @@
           "x86_64-linux"
           "aarch64-darwin"
         ];
+        flake.nixosModules = {
+          server = import ./module.nix self;
+        };
         perSystem =
           { pkgs, ... }:
           {
             formatter = pkgs.nixfmt-tree;
-            devShells.default = import ./shell.nix { inherit pkgs; };
+            devShells.default = import ./shell.nix pkgs { inherit pkgs; };
             packages.default = pkgs.callPackage ./default.nix { inherit pkgs; };
           };
-        flake.nixosModules = {
-          server = import ./module.nix self;
-          kolyma = import ./kolyma.nix self;
-        };
       }
     );
 }

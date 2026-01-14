@@ -37,7 +37,7 @@ in
 
         alias = mkOption {
           type = with types; listOf str;
-          default = ["www.floss.uz"];
+          default = [ "www.floss.uz" ];
           description = "Domains that should be aliased to main domain";
         };
       };
