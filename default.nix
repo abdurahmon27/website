@@ -26,6 +26,7 @@ pkgs.buildNpmPackage {
   version = manifest.version;
 
   src = ./.;
+  npmFlags = [ "--legacy-peer-deps" ];
   npmDepsHash = "sha256-oE+ptTfvQInlwp0LLDwU32Ot5qQA7trFNNUs5QBJNsk=";
 
   installPhase = ''
