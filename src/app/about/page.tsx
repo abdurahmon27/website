@@ -17,8 +17,6 @@ import imageAkhmadKadirov from '@/images/team/akhmad-kadirov.jpg'
 import imageBahromRahmatov from '@/images/team/bahrom-rahmatov.jpg'
 import imageManuchehrUsmonov from '@/images/team/manuchehr-usmonov.jpg'
 import imageNodirbekNomonov from '@/images/team/nodirbek-nomonov.jpg'
-import imageOtabekIsmoilov from '@/images/team/otabek-ismoilov.jpg'
-import imageShakhzodKudratov from '@/images/team/shakhzod-kudratov.jpg'
 import imageBobomurodMuminov from '@/images/team/bobomurod-muminov.jpg'
 import imageRustamMamadaminov from '@/images/team/rustam-mamadaminov.jpg'
 import imageDiyorbekRustamjonov from '@/images/team/diyorbek-rustamjonov.jpg'
@@ -98,12 +96,6 @@ const team = [
         image: { src: imageRustamMamadaminov },
       },
       {
-        name: 'Otabek Ismoilov',
-        role: "`O'zbek DevOps` rais / Yetakchi",
-        link: 'https://github.com/ismoilovdevml',
-        image: { src: imageOtabekIsmoilov },
-      },
-      {
         name: 'Abdurahmon Mamadiyorov',
         role: "`Gofer O'zbekiston` rais / Yetakchi",
         link: 'https://www.haywan.uz',
@@ -121,12 +113,6 @@ const team = [
     id: 'maintainers',
     title: 'Hamjamiyat Boshqarmalari',
     people: [
-      {
-        name: 'Shaxzod Qudratov',
-        role: 'Hamjamiyatlar Boshqaruvi',
-        link: 'https://shakhzod.me',
-        image: { src: imageShakhzodKudratov },
-      },
       {
         name: 'Diyorbek Ibragimov',
         role: "`PHP O'zbekiston` boshqarmasi",
