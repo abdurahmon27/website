@@ -27,7 +27,7 @@ pkgs.buildNpmPackage {
 
   src = ./.;
   npmFlags = [ "--legacy-peer-deps" ];
-  npmDepsHash = "sha256-oE+ptTfvQInlwp0LLDwU32Ot5qQA7trFNNUs5QBJNsk=";
+  npmDepsHash = "sha256-MZrBQNB+wazqxhX8Zyn8R0mm1SPGNECax3lGgJrn0/0=";
 
   installPhase = ''
     # Create output directory
