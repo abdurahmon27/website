@@ -53,25 +53,26 @@ function RadioInput({
 }
 
 function ContactForm() {
-  async function sendData(formData: FormData) {
-    'use server'
+  // async function sendData(formData: FormData) {
+  //   'use server'
 
-    let data = Object.fromEntries(formData.entries())
-    formData.entries().forEach(([key, value]) => {
-      if (key.startsWith('$')) {
-        delete data[key]
-      }
-    })
+  //   let data = Object.fromEntries(formData.entries())
+  //   formData.entries().forEach(([key, value]) => {
+  //     if (key.startsWith('$')) {
+  //       delete data[key]
+  //     }
+  //   })
 
-    // TODO: send data to registry later
-    console.log(data)
+  //   // TODO: send data to registry later
+  //   console.log(data)
 
-    redirect('/process')
-  }
+  //   redirect('/process')
+  // }
 
+  // action={sendData}
   return (
     <FadeIn className="lg:order-last">
-      <form action={sendData}>
+      <form>
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Faoliyat bo‘yicha so‘rovlar
         </h2>

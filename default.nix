@@ -12,13 +12,6 @@
 }:
 let
   manifest = pkgs.lib.importJSON ./package.json;
-
-  exec = pkgs.writeShellScript "${manifest.name}-start.sh" ''
-    # Change working directory to script
-    cd "$(dirname "$0")/../lib"
-
-    ${pkgs.lib.getExe pkgs.nodejs} ./server.js
-  '';
 in
 # pkgs.stdenv.mkDerivation {
 pkgs.buildNpmPackage {
@@ -33,24 +26,8 @@ pkgs.buildNpmPackage {
     # Create output directory
     mkdir -p $out
 
-    # Copy standalone as library
-    cp -R ./.next/standalone $out/lib
-
-    # Copy static contents
-    if [ -d "./.next/static" ]; then
-      cp -R ./.next/static $out/lib/.next/static
-    fi
-
-    # Copy public assets
-    if [ -d "./public" ]; then
-      cp -R ./public $out/lib/public
-    fi
-
-    # Create executable directory
-    mkdir -p $out/bin
-
-    # Copy shell script to executables
-    cp -r ${exec} $out/bin/${manifest.name}-start
+    # Move compiled contents
+    cp -r ./out/* $out
   '';
 
   nativeBuildInputs = with pkgs; [
