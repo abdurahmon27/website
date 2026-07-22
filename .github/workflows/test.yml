@@ -4,11 +4,14 @@ on: [push, pull_request]
 
 jobs:
   test-flake:
-    runs-on: self-hosted
+    runs-on: ubuntu-latset
 
     steps:
       - name: Check out the repository
         uses: actions/checkout@v4
+
+      - name: Install Nix package manager
+        uses: DeterminateSystems/determinate-nix-action@v3
 
       - name: Check up flake configuration
         run: nix flake check --all-systems --show-trace
